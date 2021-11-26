@@ -1,16 +1,18 @@
-import {h, Component} from "@stencil/core";
+import { h, Component } from "@stencil/core";
 
 @Component({
-    tag: 'side-drawer'
-}) 
+    tag: 'side-drawer',
+    styleUrl:"./side-drawer.css",
+    shadow: true
+})
 
 
 export class SideDrawer {
-    render(){
+    render() {
         return (
-        <div>
-            <h1>The Side Drawer</h1>
-            </div>
-        )
-    };
+            <aside class="side">
+                <h1>The Side Drawer</h1>
+            </aside>
+        );
+    }
 }
